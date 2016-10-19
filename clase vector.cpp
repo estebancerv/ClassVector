@@ -13,7 +13,7 @@ class Punto{
 			y=cory;
 		}
 		void printPunto(){
-			cout << "(" << x << "," << y << ")"; 
+			cout << "(" << x << "," << y << ")" << endl; 
 		}
 		int get_x(){
 			return x;
@@ -32,7 +32,7 @@ class Vector{
 			P1=Pf;
 		}
 		void printVector(){
-			cout << "Start= (" << P0.get_x() << "," << P0.get_y() << ") End= (" << P1.get_x() << "," << P1.get_y() << ")";
+			cout << "Start= (" << P0.get_x() << "," << P0.get_y() << ") End= (" << P1.get_x() << "," << P1.get_y() << ")" << endl;
 		}
 		float distancia(){
 			float dis;
@@ -46,6 +46,6 @@ int main() {
 	Punto Pf(6,7);
 	Vector MiVector(Pi,Pf);
 	MiVector.printVector();
-	cout << "\nDistancia = " << MiVector.distancia();
+	cout << "Distancia = " << MiVector.distancia();
 	return 0;
 }
